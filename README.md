@@ -8,3 +8,6 @@ Referências
 [CSS W3schools](https://www.w3schools.com/css/)
 
 [Javascript W3schools](https://www.w3schools.com/js/)
+
+###Link para o StackEdit (Editor de markdown)
+[StackEdit](https://stackedit.io/app)
