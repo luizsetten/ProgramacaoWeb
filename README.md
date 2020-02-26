@@ -2,7 +2,7 @@
 
 Referências
 
-![HTML Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Flogodownload.org%2Fhtml-5-logo%2F&psig=AOvVaw31ZipT8QPkEd5hvS6ftLkS&ust=1582817160209000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIja3sbD7-cCFQAAAAAdAAAAABAD)
+![Image](https://www.huszardev.com/wp-content/uploads/2018/07/1_l4xICbIIYlz1OTymWCoUTw1.jpeg)
 [HTML W3schools](https://www.w3schools.com/html/)
 
 [CSS W3schools](https://www.w3schools.com/css/)
