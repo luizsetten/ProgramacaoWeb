@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafeína - Cadastro</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>Cadastro de usuários</h1>
 
         <form action="" method="post">
-            <p>Nome: <input type="text" name="name" id="name"></p>
-            <p>Endereço: <input type="text" name="address" id="address"></p>
-            <p>E-mail: <input type="text" name="email" id="email"></p>
-            <p>Cidade: <input type="text" name="city" id="city"></p>
-            <p>Estado: <select name="state" id="state">
+            <input type="text" name="name" id="name" placeholder="Nome">
+            <input type="text" name="address" id="address" placeholder="Endereço">
+            <input type="text" name="email" id="email" placeholder="E-mail">
+            <input type="text" name="city" id="city" placeholder="Cidade">
+            <select name="state" id="state">
                 <optgroup label="Norte">
+                    <option value="" disabled selected hidden>Selecione o Estado</option>
                     <option value="Amazonas">Amazonas</option>
                     <option value="Roraima">Roraima</option>
                     <option value="Amapá">Amapá</option>
@@ -51,30 +53,32 @@
                     <option value="Santa Catarina">Santa Catarina</option>
                 </optgroup>
 
-            </select></p>
+            </select>
 
-            <p>Sexo: 
+            <span>Sexo:</span>
+            <div class="sexo"> 
                 <input type="radio" name="gender" id="" value="Masculino">Masculino
                 <input type="radio" name="gender" id="" value="Feminino">Feminino
                 <input type="radio" name="gender" id="" value="Outro">Outro
-            </p>
+            </div>
 
-            <p>Gêneros de filmes que você mais gosta:<br>
-                <input type="checkbox" name="Ação" id="">Ação<br>
-                <input type="checkbox" name="Aventura" id="">Aventura<br>
-                <input type="checkbox" name="Comédia" id="">Comédia<br>
-                <input type="checkbox" name="Suspense" id="">Suspense<br>
-                <input type="checkbox" name="Drama" id="">Drama<br>
-                <input type="checkbox" name="Romance" id="">Romance<br>
-                <input type="checkbox" name="Terror" id="">Terror<br>
-            </p>
+            <span>Gêneros de filmes que você mais gosta:</span>
+            <div class="generos">
+                <input type="checkbox" name="Ação" id="">Ação
+                <input type="checkbox" name="Aventura" id="">Aventura
+                <input type="checkbox" name="Comédia" id="">Comédia
+                <input type="checkbox" name="Suspense" id="">Suspense
+                <input type="checkbox" name="Drama" id="">Drama
+                <input type="checkbox" name="Romance" id="">Romance
+                <input type="checkbox" name="Terror" id="">Terror
+            </div>
 
-            <p>Usuário: <input type="text" name="username" id="username"></p>
-            <p>Senha: <input type="text" name="password" id="password"></p>
+            <input type="text" name="username" id="username" placeholder="Usuário">
+            <input type="text" name="password" id="password" placeholder="Senha">
 
-            <p><button onClick="">Cancelar</button><button type="reset">Limpar</button><button type="submit">Cadastrar</button></p>
+            <div class="botoes"><button onClick="">Cancelar</button><button type="reset">Limpar</button><button type="submit">Cadastrar</button></div>
         </form>
-        <a href="./index.html">Voltar</a>
+        <a href="../../index.html">Voltar</a>
     </div>
 </body>
 </html>
