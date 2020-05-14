@@ -11,3 +11,6 @@ Referências
 
 ### Link para o StackEdit (Editor de markdown)
 [StackEdit](https://stackedit.io/app)
+
+### Link para o Dillinger (Editor de markdown)
+[Dillinger](https://dillinger.io/)

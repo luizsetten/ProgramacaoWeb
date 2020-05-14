@@ -1,7 +1,6 @@
 
-
 body {
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     max-width: 70%;
     min-width: 350px;
@@ -35,26 +34,11 @@ table {
     background-color: rgb(238, 238, 238);
 }
 
-
-.horario {
-    font-weight: bolder;
-    background-color: rgb(138, 138, 138);
-}
-
-.intervalo {
-    background-color: rgb(138, 138, 138);
-}
-
-
-
 ul {    
     list-style: none;
     text-align: center;
     align-self: center;
-}
 
-.favoritos li {
-    display: inline;
 }
 
 li {
@@ -63,6 +47,10 @@ li {
 
 .favoritos img {
     max-width: 200px;
+}
+
+.favoritos li {
+    display: inline;
 }
 
 #menu ul {
@@ -85,8 +73,16 @@ li {
     border-bottom:3px solid #EDEDED;
 }
 
+h3 {
+    border-bottom: 3px solid #EA0000;
+}
+
 #menu ul li a:hover {
     background-color:#D6D6D6;
     color: #6D6D6D;
     border-bottom:3px solid #EA0000;
+}
+
+ol li {
+    margin-top: 12px;
 }
