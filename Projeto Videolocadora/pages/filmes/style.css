@@ -84,7 +84,15 @@ div ul li {
   margin: 2em 1em;
 }
 
+div ul li img {
+  width: 200px;
+  height: 300px;;
+  display: list-item;
+  object-fit: fill;
+}
+
 div ul {
+  
   text-align: center;
 }
 
@@ -92,12 +100,12 @@ div ul {
 
 /*----------------- FOOTER ------------------ */
 
-
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
+
 
 #myFooter {
   background-color: #3c3d41;
