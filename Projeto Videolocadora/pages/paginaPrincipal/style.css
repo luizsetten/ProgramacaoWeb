@@ -96,7 +96,9 @@ margin-top: 5em;
 /*----------------- FIM DO MAIN ------------------ */
 
 
-
+object {
+  width: 100%;
+}
 
 
 
