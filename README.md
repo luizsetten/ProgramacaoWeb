@@ -3,7 +3,7 @@
 ## Projeto de formulário utilizando somente Bootstrap
 [FormulárioBootstrap](https://github.com/luizsetten/ProgramacaoWeb/tree/master/FormularioBootrstap)
 
-![Image](https://github.com/luizsetten/ProgramacaoWeb/tree/master/images/formBootstrap.png)
+![Image](https://raw.githubusercontent.com/luizsetten/ProgramacaoWeb/master/images/formBootstrap.png)
 
 
 Referências
