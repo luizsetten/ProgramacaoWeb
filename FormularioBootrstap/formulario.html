@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro do cliente</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="card mx-auto border border-primary my-3" style="width: 99%;">
+    <h5 class="card-header p-20 mb-2 bg-primary text-white">Cadastro de Cliente</h5>
+
+    <div style="width: 90%;">
+      <div class="card-body text-right">
+        <span class="text-secondary"><span class="text-danger">*</span> Campo Obrigatório</span>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Nome <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">CPF <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" placeholder="Apenas números">
+        </div>
+        <label class="col-sm-1 col-form-label text-right font-weight-bolder">Nascimento <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" placeholder="DD/MM/AAAA">
+        </div>
+        <label class="col-sm-1 col-form-label text-right font-weight-bolder">Sexo <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-3 d-flex align-items-center">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio1">Feminino</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio2">Masculino</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Telefone <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-2">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="fas fa-phone-alt"></i></div>
+            </div>
+            <input type="text" class="form-control" placeholder="XX XXXXX-XXXX">
+          </div>
+        </div>
+        <label class="col-sm-1 col-form-label text-right font-weight-bolder">Telefone</label>
+        <div class="col-sm-2">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="fas fa-phone-alt"></i></div>
+            </div>
+            <input type="text" class="form-control" placeholder="XX XXXXX-XXXX">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Email <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-5">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+            </div>
+            <input type="text" class="form-control" placeholder="email@email.com">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">CEP <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" placeholder="Apenas números">
+        </div>
+
+        <div class="col-sm-1">
+          <button type="submit" class="btn btn-primary">Pesquisar</button>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Endereço</label>
+        <div class="col-sm-4">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Rua</div>
+            </div>
+            <input type="text" class="form-control" readonly>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">N° <span class="text-danger font-weight-normal">*</span></div>
+            </div>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Bairro</div>
+            </div>
+            <input type="text" class="form-control" readonly>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder"> </label>
+        <div class="col-sm-4">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Cidade</div>
+            </div>
+            <input type="text" class="form-control" readonly>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Estado</div>
+            </div>
+            <input type="text" class="form-control" readonly>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Estado Civil <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-2">
+          <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected></option>
+            <option value="1">Solteiro(a)</option>
+            <option value="2">Casado(a)</option>
+            <option value="3">Viúvo(a)</option>
+          </select>
+        </div>
+        <label class="col-sm-1 col-form-label text-right font-weight-bolder">Filhos <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-3">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadio3" name="customRadio2" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio3">Não</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadio4" name="customRadio2" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio4">Sim</label>
+                </div>
+              </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Quantos?">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Escolaridade <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-3">
+          <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected></option>
+            <option value="1">Fundamental</option>
+            <option value="2">Médio</option>
+            <option value="3">Superior</option>
+          </select>
+        </div>
+        <label class="col-sm-1 col-form-label text-right font-weight-bolder">Profissão <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Encaminhamento <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-4">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadio5" name="customRadio3" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio5">Não</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadio6" name="customRadio3" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio6">Sim</label>
+                </div>
+              </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Instituição">
+          </div>
+        </div>
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Aluno do IFSULDEMINAS<span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-4">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadio7" name="customRadio4" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio7">Não</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadio8" name="customRadio4" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio8">Sim</label>
+                </div>
+              </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Curso">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Como ficou sabendo do IFSULDEMINAS?</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder"></label>
+      </div>
+
+      <div class="form-group row">
+        <h2 class="col-sm-2 text-right">Responsável</h2>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Nome <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Vínculo com cliente <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control">
+        </div>
+        <label class="col-sm-1 col-form-label text-right font-weight-bolder">Nascimento <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" placeholder="DD/MM/AAAA">
+        </div>
+        <label class="col-sm-1 col-form-label text-right font-weight-bolder">Sexo <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-3 d-flex align-items-center">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadio11" name="customRadio11" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio11">Feminino</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadio12" name="customRadio11" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio12">Masculino</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Estado Civil <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-2">
+          <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected></option>
+            <option value="1">Solteiro(a)</option>
+            <option value="2">Casado(a)</option>
+            <option value="3">Viúvo(a)</option>
+          </select>
+        </div>
+        <label class="col-sm-1 col-form-label text-right font-weight-bolder">Filhos <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-3">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadio13" name="customRadio12" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio13">Não</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadio14" name="customRadio12" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio14">Sim</label>
+                </div>
+              </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Quantos?">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Escolaridade <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-3">
+          <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected></option>
+            <option value="1">Fundamental</option>
+            <option value="2">Médio</option>
+            <option value="3">Superior</option>
+          </select>
+        </div>
+        <label class="col-sm-1 col-form-label text-right font-weight-bolder">Profissão <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Telefone <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-2">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="fas fa-phone-alt"></i></div>
+            </div>
+            <input type="text" class="form-control" placeholder="XX XXXXX-XXXX">
+          </div>
+        </div>
+        <label class="col-sm-1 col-form-label text-right font-weight-bolder">Telefone</label>
+        <div class="col-sm-2">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="fas fa-phone-alt"></i></div>
+            </div>
+            <input type="text" class="form-control" placeholder="XX XXXXX-XXXX">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder">Email <span
+            class="text-danger font-weight-normal">*</span></label>
+        <div class="col-sm-5">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+            </div>
+            <input type="text" class="form-control" placeholder="email@email.com">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label text-right font-weight-bolder"></label>
+        <div class="col-sm-0">
+          <button type="button" class="btn btn-success">Cadastrar</button>
+        </div>
+        <div class="col-sm-1">
+          <button type="button" class="btn btn-danger">Cancelar</button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
