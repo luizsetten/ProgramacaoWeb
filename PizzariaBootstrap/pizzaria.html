@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container mb-4 text-center">
+    <div class="card bg-light p-4">
+      <div>
+        <img src="./imagens/logo-pizzaria.png" alt="Pizzaria logo" class="display-4 pb-4" style="width: 200px;" />
+        <p class="lead border-top border-secondary pt-4 font-weight-lighter">Utilize as opções disponíveis abaixo para
+          selecionar seus produtos e realizar seu pedido.</p>
+        <button class="btn btn-primary font-weight-bold">Acompanhe seu pedido</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container mb-4">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="font-weight-bold"><span class="px-2 bg-primary text-white rounded">1</span> Escolha os produtos</h3>
+      </div>
+      <form class="card-body">
+        <div class="form-row">
+          <div class="form-group col-md-6 mx-md-3 mx-sm-0">
+            <label for="selectorPizza">* Selecione um produto:</label>
+            <select class="col-sm-12" id="selectorPizza">
+              <option value="---">---</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3 mx-2-md mx-0-sm">
+            <label for="quantity">* Quantidade:</label>
+            <input type="text" class="col-sm-12" id="quantity">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="exampleInputPassword1"> </label>
+            <button class="btn btn-primary col-sm-12 m-1">Adicionar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="container mb-4">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="font-weight-bold"><span class="px-2 bg-primary text-white rounded">2</span> Produtos do seu pedido
+        </h3>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Produto</th>
+                <th scope="col">Qtd</th>
+                <th scope="col">Preço Unit.</th>
+                <th scope="col">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><img src="./imagens/pizza-calabresa.jpg" alt="Pizza Calabresa" style="width: 80px;" />
+                </th>
+                <td>Pizza Calabresa<br><button class="btn btn-danger">Remover</button></td>
+                <td>Valor 31</td>
+                <td>Valor 41</td>
+                <td>Valor 51</td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="./imagens/pizza-4-queijos.jpg" alt="Pizza 4 Queijos" style="width: 80px;" />
+                </th>
+                <td>Pizza 4 Queijos<br><button class="btn btn-danger">Remover</button></td>
+                <td>Valor 31</td>
+                <td>Valor 41</td>
+                <td>Valor 51</td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="./imagens/pizza-marguerita.jpg" alt="Pizza Marguerita" style="width: 80px;" />
+                </th>
+                <td>Pizza Marguerita<br><button class="btn btn-danger">Remover</button></td>
+                <td>Valor 31</td>
+                <td>Valor 41</td>
+                <td>Valor 51</td>
+              </tr>
+              <tr>
+                <td class="table-dark text-right font-weight-bold" colspan="4">Total do pedido:</td>
+                <td class="table-active font-weight-bold">R$ 0,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-4">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="font-weight-bold"><span class="px-2 bg-primary text-white rounded">3</span> Informações adicionais
+        </h3>
+      </div>
+      <div class="card-body">
+        <form class="card-body">
+          <div class="form-row">
+            <div class="form-group col-md-3 ml-md-3 mx-sm-0">
+              <label for="name">* Nome Completo:</label>
+              <input type="text" class="col-sm-12" id="name" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group col-md-3 ml-md-3 mx-sm-0">
+              <label for="email">* E-mail:</label>
+              <input type="text" class="col-sm-12" id="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="form-group col-md-3 ml-md-3 mx-sm-0">
+              <label for="tel">* Telefone:</label>
+              <input type="text" class="col-sm-12" id="tel" placeholder="Digite seu telefone">
+            </div>
+            <div class="form-group col-md-3 ml-md-3 mx-sm-0">
+              <label for="cep">* CEP:</label>
+              <input type="text" class="col-sm-12" id="cep" placeholder="00000-000">
+            </div>
+            <div class="form-group col-md-3 ml-md-3 mx-sm-0">
+              <label for="addr">* Endereço:</label>
+              <input type="text" class="col-sm-12" id="addr" placeholder="...">
+            </div>
+            <div class="form-group col-md-3 ml-md-3 mx-sm-0">
+              <label for="number">* N°:</label>
+              <input type="text" class="col-sm-12" id="number" placeholder="...">
+            </div>
+            <div class="form-group col-md-3 ml-md-3 mx-sm-0">
+              <label for="extras">* Complemento:</label>
+              <input type="text" class="col-sm-12" id="extras" placeholder="...">
+            </div>
+            <div class="form-group col-md-3 ml-md-3 mx-sm-0">
+              <label for="neighbor">* Bairro:</label>
+              <input type="text" class="col-sm-12" id="neighbor" placeholder="...">
+            </div>
+            <div class="form-group col-md-3 ml-md-3 mx-sm-0">
+              <label for="city">* Cidade:</label>
+              <input type="text" class="col-sm-12" id="city" placeholder="...">
+            </div>
+            <div class="form-group col-md-3 ml-md-3 mx-sm-0">
+              <label for="UF">* Estado:</label>
+              <select name="" id="" class="col-sm-12">
+                <option value="--"></option>
+              </select>
+            </div>
+            <div class="form-group col-md-12">
+              <button class="btn btn-success col-sm-4">Enviar pedido</button>
+            </div>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-4">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="font-weight-bold"><span class="px-2 bg-primary text-white rounded">4</span> Finalização</h3>
+      </div>
+      <div class="card-body">
+        <!-- Colocar o card verde com as informações -->
+        <div class="alert alert-success" role="alert">
+          <p class="text-center">código do pedido:</p>
+          <h1 class="text-center pb-2 font-weight-normal">Q5PaXtkK</h1>
+          <p class="text-center border-top border-secondary">Seu pedido foi enviado com sucesso.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
